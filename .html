@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abi Acorn</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header, nav, main, footer {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid crimson;
+            border-radius: 8px;
+            background-color: lightpink;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: plum  ;
+        }
+
+        nav a { 
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+            transition: background-color 0.3s;
+            font-weight: 700;
+        }
+
+        nav a:hover {
+            background-color: cadeblue;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            background-color: lightcoral;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 align="center" >Abi Acorn</h1>
+        
+     
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>DOG</h2>
+            <p>The dog has been selectively bred over millennia 
+               for various behaviors, sensory capabilities, and physical 
+               attributes. Dog breeds vary widely in shape, size, and color. </p>
+        </section>
+
+        <section>
+            <h2>CAT</h2>
+            <p>Female domestic cats can have kittens from spring to late autumn 
+               in temperate zones and throughout the year in equatorial regions, 
+               with litter sizes often ranging from two to five kittens.</p>
+        </section>
+
+        <section>
+            <h2>FISH</h2>
+            <p>The earliest organisms that can be classified as fish were soft-bodied 
+               chordates that first appeared during the Cambrian period.Although they 
+               lacked a true spine. </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 AbiAcorn. All rights reserved.</p>
+    </footer>
+</body>
+</html>
